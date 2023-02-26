@@ -1,11 +1,9 @@
 import { Button, Stack, Wrap, WrapItem } from '@chakra-ui/react';
 import type { FC } from 'react';
 
-interface ToolbarProps {
-  test: string;
-}
+interface ToolbarProps {}
 
-const Toolbar: FC<ToolbarProps> = ({ test }) => {
+const Toolbar: FC<ToolbarProps> = () => {
   return (
     <Stack direction="column">
       <Wrap spacing={4}>

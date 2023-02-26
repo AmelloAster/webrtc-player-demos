@@ -17,7 +17,7 @@
       "@src/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@pages/*": ["src/pages/*"],
-      "@components/*": ["src/components/*"],
+      "@components/*": ["src/pages/webrtc-live-player/components/*"],
       "@utils/*": ["src/utils/*"],
       "@hooks/*": ["src/hooks/*"],
       "@#/*": ["types/*"]

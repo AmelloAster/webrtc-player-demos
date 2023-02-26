@@ -3,7 +3,7 @@ import type { FC } from 'react';
 
 interface SidebarProps {}
 
-const Sidebar: FC<SidebarProps> = ({}) => {
+const Sidebar: FC<SidebarProps> = () => {
   return (
     <>
       <Textarea

@@ -1,6 +1,7 @@
 import { Box, Grid, GridItem } from '@chakra-ui/react';
-import Sidebar from '@components/Sidebar';
-import Toolbar from '@components/Toolbar';
+
+import Sidebar from './components/Sidebar';
+import Toolbar from './components/Toolbar';
 
 function WebRTCPlayer() {
   return (
@@ -34,7 +35,7 @@ function WebRTCPlayer() {
             <Sidebar />
           </GridItem>
           <GridItem rounded="base" p="2" area={'video'}>
-            <Toolbar test="" />
+            <Toolbar />
           </GridItem>
           <GridItem rounded="base" pl="2" area={'videoInfo'}>
             Footer
