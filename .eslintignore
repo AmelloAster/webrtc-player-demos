@@ -1,0 +1,4 @@
+*.css
+*.svg
+*.config.*
+package-lock.json
