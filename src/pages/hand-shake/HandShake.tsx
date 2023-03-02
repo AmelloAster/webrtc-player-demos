@@ -1,20 +1,12 @@
-import { Alert, Box, Button, Grid, GridItem, Heading, Tag, Text, Textarea } from '@chakra-ui/react';
+import { Alert, Box, Button, Grid, Heading, Text, Textarea } from '@chakra-ui/react';
 import type { ChangeEvent, FC } from 'react';
-import { useRef, useState } from 'react';
-import { useMount } from 'react-use';
+import { useState } from 'react';
 
 import HostVideo from './components/HostVideo';
 import RemoteVideo from './components/RemoteVideo';
 
 interface HandShakeProps {}
 
-const servers = {
-  iceServers: [
-    {
-      urls: ['stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302']
-    }
-  ]
-};
 const peerConnection = new RTCPeerConnection();
 const localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
 const remoteStream = new MediaStream();

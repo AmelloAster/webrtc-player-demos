@@ -16,7 +16,7 @@ import { motion } from 'framer-motion';
 import type { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const cardData = [
+const cardList = [
   {
     title: 'WebRTC LiveStream Player',
     desc: 'WebRTC 直播推流',
@@ -28,9 +28,9 @@ const cardData = [
     navUrl: '/page/hand-shake'
   },
   {
-    title: 'WebRTC Video Call',
-    desc: 'WebRTC 视频通话',
-    navUrl: '/page/webRTC-live-player'
+    title: 'WebRTC Meeting Prep Room',
+    desc: 'WebRTC 会议准备室',
+    navUrl: '/page/prep-room'
   }
 ];
 
@@ -49,7 +49,7 @@ const Home: FC = () => {
         </Text>
       </Box>
       <Grid templateRows="repeat(2, 1fr)" templateColumns="repeat(3, 1fr)" gap={6}>
-        {cardData.map((i, idx) => (
+        {cardList.map((i, idx) => (
           <GridItem
             key={idx}
             as={motion.div}
@@ -65,7 +65,7 @@ const Home: FC = () => {
               y: 0,
               rotate: 0
             }}
-            transition={`1s ease ${idx * 0.05}s`}
+            transition={`0.3s ease ${idx * 0.03}s`}
             viewport={{ once: true }}
           >
             <Card border={2} borderColor="black" borderStyle="solid">

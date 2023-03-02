@@ -7,7 +7,7 @@ function WebRTCPlayer() {
   return (
     <>
       <Box bg="blue" py={4} px={24} color="white" fontWeight={500} as="header">
-        WebRTC Player
+        WebRTC Live Player
       </Box>
       <Box
         bg={'gray.100'}
